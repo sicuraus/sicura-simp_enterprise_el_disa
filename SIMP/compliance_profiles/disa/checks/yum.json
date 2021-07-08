@@ -1,0 +1,1 @@
+{"version":"2.0.0","checks":{"oval:com.puppet.forge.simp.disa.yum.config_options.localpkg_gpgcheck":{"settings":{"parameter":"yum::config_options","value":{"localpkg_gpgcheck":"1"}},"type":"puppet-class-parameter"}}}

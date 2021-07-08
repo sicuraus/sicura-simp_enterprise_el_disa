@@ -1,0 +1,1 @@
+{"version":"2.0.0","checks":{"oval:com.puppet.forge.simp.disa.rsyslog.enable_tls_logging":{"settings":{"parameter":"rsyslog::enable_tls_logging","value":true},"type":"puppet-class-parameter"}}}

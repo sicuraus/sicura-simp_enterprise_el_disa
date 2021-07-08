@@ -1,0 +1,1 @@
+{"version":"2.0.0","checks":{"oval:com.puppet.forge.simp.disa.simp_options.fips":{"settings":{"parameter":"simp_options::fips","value":true},"type":"puppet-class-parameter"}}}
