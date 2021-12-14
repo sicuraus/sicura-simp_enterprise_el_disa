@@ -118,3 +118,30 @@ To set failover log servers, set the following via Hiera:
 simp_options::syslog::failover_log_servers:
   - failover.server.one
 ```
+
+### Yum repo_gpgcheck Configuration
+
+DISA Stig requires that `repo_gpgcheck=1` be present in /etc/yum.conf. This could 
+have a negative impact on the functionality of OEL, RHEL, and CentOS yum 
+repositories. Often times after applying this parameter several repos will 
+begin to throw errors like the following in OEL/RHEL/Centos 7 systems: 
+
+```
+https://[repo_location]/repodata/repomd.xml.asc: [Errno 14] HTTPS Error 404 - Not Found
+```
+
+And errors like the following in OEL/RHEL/Centos 8 systems:
+
+```
+Error: Failed to download metadata for repo '[reponame]': GPG verification is enabled, but GPG signature is not available. This may be an error or the repository does not support GPG verification: Status code: 404 for https://[repo_location]/repodata/repomd.xml.asc
+```
+
+To work around this issue, set the following via Hiera:
+
+```
+yum::config_options:
+  repo_gpgcheck: false
+```
+
+This will cause a failure in the scans for the system, however, the 
+repositories should begin working as expected again.
