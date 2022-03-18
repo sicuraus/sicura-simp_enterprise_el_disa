@@ -1,1 +1,1 @@
-{"version":"2.0.0","checks":{"oval:com.puppet.forge.simp.disa.rsyslog.enable_tls_logging":{"settings":{"parameter":"rsyslog::enable_tls_logging","value":true},"type":"puppet-class-parameter"}}}
+{"version":"2.0.0","checks":{"oval:com.puppet.forge.simp.disa.rsyslog.enable_tls_logging":{"settings":{"parameter":"rsyslog::enable_tls_logging","value":true},"type":"puppet-class-parameter","remediation":{"risk":[{"level":41,"reason":"If the server being sent to isn't configured for tls communication, logs could fail to send to it once tls logging is enabled."}]}}}}
