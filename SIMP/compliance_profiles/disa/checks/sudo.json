@@ -1,0 +1,1 @@
+{"version":"2.0.0","checks":{"oval:com.puppet.forge.simp.disa.sudo.include_dirs":{"settings":{"parameter":"sudo::include_dirs","value":["/etc/sudoers.d"]},"type":"puppet-class-parameter","remediation":{"risk":[{"level":21}]}}}}
