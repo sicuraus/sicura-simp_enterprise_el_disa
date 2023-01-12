@@ -1,0 +1,1 @@
+{"version":"2.0.0","checks":{"oval:com.puppet.forge.simp.disa.selinux.mode.targeted":{"settings":{"parameter":"selinux::mode","value":"targeted"},"type":"puppet-class-parameter","remediation":{"risk":[{"level":61,"reason":"Enabling selinux on a system that hasn't previously had it enabled could cause a loss of access to several services/files."}]}}}}

@@ -1,0 +1,1 @@
+{"version":"2.0.0","checks":{"oval:com.puppet.forge.simp.disa.tftpboot.tftpboot_root_dir.var_lib_tftpboot":{"settings":{"parameter":"tftpboot::tftpboot_root_dir","value":"/var/lib/tftpboot"},"type":"puppet-class-parameter","remediation":{"risk":[{"level":21}]}}}}

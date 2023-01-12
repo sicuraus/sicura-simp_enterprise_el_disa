@@ -1,6 +1,6 @@
 {
   "name": "onyxpoint-simp_enterprise_el_disa",
-  "version": "1.3.7",
+  "version": "1.3.10",
   "author": "Onyx Point",
   "summary": "Compliance profiles for SIMP Enterprise",
   "license": "proprietary",
@@ -8,7 +8,7 @@
   "dependencies": [
     {
       "name": "simp-compliance_markup",
-      "version_requirement": ">= 3.2.0 < 4.0.0"
+      "version_requirement": ">= 3.2.3 < 4.0.0"
     },
     {
       "name": "simp-simp_snmpd",
@@ -24,7 +24,7 @@
     },
     {
       "name": "simp-simp",
-      "version_requirement": ">= 4.15.0 < 5.0.0"
+      "version_requirement": ">= 4.16.4 < 5.0.0"
     },
     {
       "name": "simp-cron",
@@ -32,7 +32,7 @@
     },
     {
       "name": "simp-auditd",
-      "version_requirement": ">= 8.6.2 < 9.0.0"
+      "version_requirement": ">= 8.7.5 < 9.0.0"
     },
     {
       "name": "simp-useradd",
@@ -40,7 +40,7 @@
     },
     {
       "name": "simp-rsyslog",
-      "version_requirement": ">= 7.6.4 < 9.0.0"
+      "version_requirement": ">= 8.2.0 < 9.0.0"
     },
     {
       "name": "simp-ssh",
@@ -53,6 +53,10 @@
     {
       "name": "simp-sudo",
       "version_requirement": ">= 5.3.1 < 6.0.0"
+    },
+    {
+      "name": "simp-tlog",
+      "version_requirement": ">= 0.3.2 < 1.0.0"
     },
     {
       "name": "simp-at",
@@ -80,7 +84,7 @@
     },
     {
       "name": "puppet-systemd",
-      "version_requirement": ">= 3.0.0 < 4.0.0"
+      "version_requirement": ">= 3.10.0 < 4.0.0"
     },
     {
       "name": "simp-selinux",
@@ -92,7 +96,7 @@
     },
     {
       "name": "onyxpoint-simp_enterprise_el",
-      "version_requirement": ">= 1.3.0 < 2.0.0"
+      "version_requirement": ">= 1.4.2 < 2.0.0"
     },
     {
       "name": "simp-crypto_policy",
@@ -132,7 +136,7 @@
       "version_requirement": ">= 6.0.0 < 8.0.0"
     }
   ],
-  "pdk-version": "2.3.0",
-  "template-url": "pdk-default#2.3.0",
-  "template-ref": "tags/2.3.0-0-g8aaceff"
+  "pdk-version": "2.5.0",
+  "template-url": "pdk-default#2.5.0",
+  "template-ref": "tags/2.5.0-0-g369d483"
 }
