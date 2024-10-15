@@ -1,16 +1,23 @@
 # simp_enterprise_el_disa
 
 -------------------------------------------------------------------------------
-> Copyright Onyx Point, Inc - All Rights Reserved
+> Copyright Sicura, Inc - All Rights Reserved
 -------------------------------------------------------------------------------
 
 SIMP Compliance Engine data for DISA STIG benchmarks.
 
 The following DISA STIG benchmarks are currently supported:
 
-* Red Hat Enterprise Linux 7 V3R2
-* Oracle Linux 7 V2R2
-* Red Hat Enterprise Linux 8 V1R0-3 (draft)
+* Red Hat Enterprise Linux 7 V3R15 - SCAP (deprecated)
+* Red Hat Enterprise Linux 7 V3R15 - Manual (deprecated)
+* Red Hat Enterprise Linux 8 V1R13 - SCAP
+* Red Hat Enterprise Linux 8 V1R14 - Manual
+* Red Hat Enterprise Linux 9 V2R1 - SCAP
+* Red Hat Enterprise Linux 9 V2R1 - Manual
+* Oracle Linux 7 V2R13 - SCAP
+* Oracle Linux 7 V2R14 - Manual
+* Oracle Linux 8 V2R1 - SCAP
+* Oracle Linux 8 V2R1 - Manual
 
 ## Enabling DISA STIG enforcement
 
@@ -124,13 +131,13 @@ simp_options::syslog::failover_log_servers:
 DISA Stig requires that `repo_gpgcheck=1` be present in /etc/yum.conf. This could 
 have a negative impact on the functionality of OEL, RHEL, and CentOS yum 
 repositories. Often times after applying this parameter several repos will 
-begin to throw errors like the following in OEL/RHEL/Centos 7 systems: 
+begin to throw errors like the following in EL 7 systems: 
 
 ```
 https://[repo_location]/repodata/repomd.xml.asc: [Errno 14] HTTPS Error 404 - Not Found
 ```
 
-And errors like the following in OEL/RHEL/Centos 8 systems:
+And errors like the following in EL 8 systems:
 
 ```
 Error: Failed to download metadata for repo '[reponame]': GPG verification is enabled, but GPG signature is not available. This may be an error or the repository does not support GPG verification: Status code: 404 for https://[repo_location]/repodata/repomd.xml.asc
