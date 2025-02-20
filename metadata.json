@@ -1,6 +1,6 @@
 {
   "name": "sicura-simp_enterprise_el_disa",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "author": "Sicura",
   "summary": "Compliance profiles for SIMP Enterprise",
   "license": "proprietary",
@@ -147,7 +147,6 @@
     {
       "operatingsystem": "OracleLinux",
       "operatingsystemrelease": [
-        "7",
         "8"
       ]
     },
