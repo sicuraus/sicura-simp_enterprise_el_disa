@@ -1,6 +1,6 @@
 {
   "name": "sicura-simp_enterprise_el_disa",
-  "version": "1.7.1",
+  "version": "1.7.4",
   "author": "Sicura",
   "summary": "Compliance profiles for SIMP Enterprise",
   "license": "proprietary",
@@ -48,7 +48,7 @@
     },
     {
       "name": "simp-crypto_policy",
-      "version_requirement": ">= 0.1.2 < 1.0.0"
+      "version_requirement": ">= 0.1.2 < 2.0.0"
     },
     {
       "name": "simp-deferred_resources",
