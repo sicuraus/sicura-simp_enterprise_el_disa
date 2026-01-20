@@ -1,38 +1,38 @@
 # simp_enterprise_el_disa
 
--------------------------------------------------------------------------------
-> Copyright Sicura, Inc - All Rights Reserved
--------------------------------------------------------------------------------
-
-SIMP Compliance Engine data for DISA STIG benchmarks.
+Compliance Engine data for DISA STIG benchmarks.
 
 The following DISA STIG benchmarks are currently supported:
 
-* Red Hat Enterprise Linux 8 V1R13 - SCAP
-* Red Hat Enterprise Linux 8 V1R14 - Manual
-* Red Hat Enterprise Linux 9 V2R1 - SCAP
-* Red Hat Enterprise Linux 9 V2R1 - Manual
-* Oracle Linux 8 V2R1 - SCAP
-* Oracle Linux 8 V2R1 - Manual
+* Red Hat Enterprise Linux 8 V2R4 - SCAP
+* Red Hat Enterprise Linux 8 V2R4 - Manual
+* Red Hat Enterprise Linux 9 V2R5 - SCAP
+* Red Hat Enterprise Linux 9 V2R5 - Manual
+* Oracle Linux 8 V2R5 - SCAP
+* Oracle Linux 8 V2R5 - Manual
+* Oracle Linux 9 V1R1 - SCAP
+* Oracle Linux 9 V1R3 - Manual
 
 ## Enabling DISA STIG enforcement
 
-In your environment-level `hiera.yaml`, add a layer for `compliance_markup::enforcement`.
+In your environment-level `hiera.yaml`, add a layer for `compliance_engine::enforcement`.
 
 ```yaml
 hierarchy:
-  - name: SIMP Compliance Engine
-    lookup_key: compliance_markup::enforcement
+  - name: Compliance Engine
+    lookup_key: compliance_engine::enforcement
 ```
 
 At a Hiera layer that applies to the nodes where you are enforcing the
-compliance profile, add a `compliance_markup::enforcement` array. For
+compliance profile, add a `compliance_engine::enforcement` array. For
 example, to enforce `disa:mac-1:classified`, use the following:
 
 ```yaml
-compliance_markup::enforcement:
+compliance_engine::enforcement:
   - disa:mac-1:classified
 ```
+
+(Substitute `compliance_markup` for `compliance_engine` in both snippets to use the older module.)
 
 The following compliance profiles are available:
 

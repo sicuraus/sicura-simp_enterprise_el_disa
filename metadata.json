@@ -1,18 +1,20 @@
 {
   "name": "sicura-simp_enterprise_el_disa",
-  "version": "1.7.11",
-  "author": "Sicura",
-  "summary": "Compliance profiles for SIMP Enterprise",
-  "license": "proprietary",
-  "source": "N/A",
+  "version": "2.0.4",
+  "author": "Sicura, Inc.",
+  "summary": "Compliance profiles for DISA STIG on Enterprise Linux systems",
+  "license": "AGPL-3.0-or-later",
+  "source": "https://github.com/sicuraus/sicura-simp_enterprise_el_disa.git",
+  "project_page": "https://github.com/sicuraus/sicura-simp_enterprise_el_disa",
+  "issues_url": "https://github.com/sicuraus/sicura-simp_enterprise_el_disa/issues",
   "dependencies": [
     {
       "name": "sicura-simp_enterprise_el",
-      "version_requirement": ">= 1.4.2 < 2.0.0"
+      "version_requirement": ">= 1.4.2 < 3.0.0"
     },
     {
       "name": "puppet-chrony",
-      "version_requirement": ">= 0.3.1 < 5.0.0"
+      "version_requirement": ">= 0.3.1 < 6.0.0"
     },
     {
       "name": "puppet-snmp",
@@ -20,7 +22,7 @@
     },
     {
       "name": "puppet-systemd",
-      "version_requirement": ">= 3.10.0 < 9.0.0"
+      "version_requirement": ">= 3.10.0 < 10.0.0"
     },
     {
       "name": "puppet-yum",
@@ -28,15 +30,15 @@
     },
     {
       "name": "simp-aide",
-      "version_requirement": ">= 6.0.0 < 7.0.0"
+      "version_requirement": ">= 6.0.0 < 8.0.0"
     },
     {
       "name": "simp-at",
-      "version_requirement": ">= 0.1.0 < 1.0.0"
+      "version_requirement": ">= 0.1.0 < 2.0.0"
     },
     {
       "name": "simp-auditd",
-      "version_requirement": ">= 8.8.0 < 9.0.0"
+      "version_requirement": ">= 8.8.0 < 10.0.0"
     },
     {
       "name": "simp-compliance_markup",
@@ -48,7 +50,7 @@
     },
     {
       "name": "simp-crypto_policy",
-      "version_requirement": ">= 0.1.2 < 2.0.0"
+      "version_requirement": ">= 0.1.2 < 3.0.0"
     },
     {
       "name": "simp-deferred_resources",
@@ -84,7 +86,7 @@
     },
     {
       "name": "simp-pupmod",
-      "version_requirement": ">= 8.0.0 < 9.0.0"
+      "version_requirement": ">= 8.0.0 < 10.0.0"
     },
     {
       "name": "simp-rsyslog",
@@ -92,7 +94,7 @@
     },
     {
       "name": "simp-selinux",
-      "version_requirement": ">= 2.7.0 < 3.0.0"
+      "version_requirement": ">= 2.7.0 < 4.0.0"
     },
     {
       "name": "simp-simp",
@@ -100,7 +102,7 @@
     },
     {
       "name": "simp-simp_firewalld",
-      "version_requirement": ">= 0.1.0 < 1.0.0"
+      "version_requirement": ">= 0.1.0 < 2.0.0"
     },
     {
       "name": "simp-simp_grub",
@@ -147,7 +149,8 @@
     {
       "operatingsystem": "OracleLinux",
       "operatingsystemrelease": [
-        "8"
+        "8",
+        "9"
       ]
     },
     {
