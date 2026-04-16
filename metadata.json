@@ -1,6 +1,6 @@
 {
   "name": "sicura-simp_enterprise_el_disa",
-  "version": "2.0.5",
+  "version": "2.0.8",
   "author": "Sicura, Inc.",
   "summary": "Compliance profiles for DISA STIG on Enterprise Linux systems",
   "license": "AGPL-3.0-or-later",
@@ -39,10 +39,6 @@
     {
       "name": "simp-auditd",
       "version_requirement": ">= 8.8.0 < 10.0.0"
-    },
-    {
-      "name": "simp-compliance_markup",
-      "version_requirement": ">= 3.2.3 < 4.0.0"
     },
     {
       "name": "simp-cron",
