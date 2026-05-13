@@ -1,6 +1,6 @@
 {
   "name": "sicura-simp_enterprise_el_disa",
-  "version": "2.0.8",
+  "version": "2.0.9",
   "author": "Sicura, Inc.",
   "summary": "Compliance profiles for DISA STIG on Enterprise Linux systems",
   "license": "AGPL-3.0-or-later",
