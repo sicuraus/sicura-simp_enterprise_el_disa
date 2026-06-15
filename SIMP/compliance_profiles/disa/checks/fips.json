@@ -1,0 +1,1 @@
+{"version":"2.0.0","checks":{"disa:simp-simp:fips.enabled.true":{"type":"puppet-class-parameter","settings":{"parameter":"fips::enabled","value":true},"remediation":{"risk":[{"level":61,"reason":"Enabling FIPS mode could cause users to lose access to their yum repositories and ssh if their keys are not a supported type."}]},"confine":{"fips_enabled":true}}}}
