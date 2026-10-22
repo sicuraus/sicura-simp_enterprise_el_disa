@@ -1,6 +1,6 @@
 {
   "name": "sicura-simp_enterprise_el_disa",
-  "version": "3.0.12",
+  "version": "3.2.1",
   "author": "Sicura, Inc.",
   "summary": "Compliance profiles for DISA STIG on Enterprise Linux systems",
   "license": "AGPL-3.0-or-later",
@@ -38,7 +38,7 @@
     },
     {
       "name": "simp-auditd",
-      "version_requirement": ">= 8.8.0 < 11.0.0"
+      "version_requirement": ">= 8.8.0 < 12.0.0"
     },
     {
       "name": "simp-cron",
@@ -47,6 +47,10 @@
     {
       "name": "simp-crypto_policy",
       "version_requirement": ">= 0.1.2 < 4.0.0"
+    },
+    {
+      "name": "simp-dconf",
+      "version_requirement": ">= 3.0.0 < 4.0.0"
     },
     {
       "name": "simp-deferred_resources",
@@ -90,7 +94,7 @@
     },
     {
       "name": "simp-simp",
-      "version_requirement": ">= 4.16.4 < 10.0.0"
+      "version_requirement": ">= 10.0.0 < 11.0.0"
     },
     {
       "name": "simp-simp_firewalld",
@@ -118,7 +122,7 @@
     },
     {
       "name": "simp-ssh",
-      "version_requirement": ">= 6.13.0 < 10.0.0"
+      "version_requirement": ">= 6.13.0 < 11.0.0"
     },
     {
       "name": "simp-sssd",
@@ -134,7 +138,7 @@
     },
     {
       "name": "simp-useradd",
-      "version_requirement": ">= 0.4.1 < 4.0.0"
+      "version_requirement": ">= 4.0.0 < 5.0.0"
     }
   ],
   "operatingsystem_support": [
@@ -149,7 +153,8 @@
       "operatingsystem": "RedHat",
       "operatingsystemrelease": [
         "8",
-        "9"
+        "9",
+        "10"
       ]
     }
   ],
